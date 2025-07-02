@@ -29,15 +29,15 @@ A Node.js backend service that syncs stock data from multiple vendors and handle
 
 ## Project Structure
 
-src/
-├── app.js # Main server entry
-├── config/ # DB & MQ setup
-├── controllers/ # Express request handlers
-├── models/ # Database interaction (stock, order)
-├── routes/ # API endpoints
-├── services/ # Business logic
-vendors/ # Mock vendor APIs
-workers/ # Order processing worker
+    src/
+    ├── app.js # Main server entry
+    ├── config/ # DB & MQ setup 
+    ├── controllers/ # Express request handlers
+    ├── models/ # Database interaction (stock, order)
+    ├── routes/ # API endpoints
+    ├── services/ # Business logic
+    vendors/ # Mock vendor APIs
+    workers/ # Order processing worker
 
 
 ## PostgreSQL Setup
@@ -59,6 +59,7 @@ Create two tables:
 
 ## Environment Variables
 Create a .env file:
+    
     PORT=3000
 
     DB_USER=username
