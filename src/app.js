@@ -32,7 +32,7 @@ const PORT = process.env.PORT ;
     await VendorService.fetchAndSyncAllVendorStock();
     console.log('Vendor stock synced on startup');
 
-    await rabbit.getFromQueue('orders');
+    // await rabbit.getFromQueue('orders');
 
     // Start Express server
     app.listen(PORT, () => {

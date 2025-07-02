@@ -20,9 +20,9 @@ const VendorService = {
           await StockModel.upsertStock(item.productId, item.quantity);
         }
 
-        console.log(`✅ Synced stock from ${vendor.name}`);
+        console.log(`Synced stock from ${vendor.name}`);
       } catch (err) {
-        console.error(`❌ Failed To Connect Vendor ${vendor.name}, Error: `, err.message);
+        console.error(`Failed To Connect Vendor ${vendor.name}, Error: `, err.message);
       }
     }
   }
