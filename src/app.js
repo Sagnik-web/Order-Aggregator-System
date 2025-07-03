@@ -10,9 +10,9 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
-// Health check
+
 app.get('/', (req, res) => {
-  res.send('✅ Distributed Order Aggregator API is running.');
+  res.send('Distributed Order Aggregator API is running.');
 });
 
 // Routes
